@@ -75,7 +75,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/employee/index">List Student</a>
+                    <a class="nav-link" href="/employee/index">List employee</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/employee/list">List</a>
@@ -103,7 +103,7 @@
     </div>
 </nav>
 <%--End Nav--%>
-<h1>Student Manager</h1>
+<h1>Employee Manager</h1>
 <div class="alert">
     <c:if test="${not empty message}">
         <div class="alert alert-success">${message}</div>
@@ -163,7 +163,7 @@
         </div>
         <br>
         <div class="container mt-6">
-            <h2>Table Students</h2>
+            <h2>Table Employees</h2>
             <form action="/employee/search" method="post" class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>

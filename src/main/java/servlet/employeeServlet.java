@@ -116,7 +116,10 @@ public class employeeServlet extends HttpServlet {
             BeanUtils.populate(employee, request.getParameterMap());
             EmployeeDAO dao = new EmployeeDAO();
             dao.create(employee);
+            findAll(request, response);
             request.setAttribute("message", "Create success!");
+            request.getRequestDispatcher("/views/list.jsp").forward(request, response);
+
 
         }catch (Exception e){
             e.printStackTrace();
